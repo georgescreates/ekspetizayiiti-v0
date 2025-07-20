@@ -1,0 +1,677 @@
+[
+    {
+        "name": "Kay Tika Sante",
+        "type": "Klinik Prive",
+        "description": "Yon ti klinik prive ki ofri swen prensipal ak kontwòl tansyon.",
+        "coordinates": {
+            "latitude": 18.5402,
+            "longitude": -72.3318
+        },
+        "address": "Rue Desmirieux, Delmas 33, Port-au-Prince",
+        "email": "kaytikasante@pv.ht",
+        "phone": "+509 3840-5617",
+        "opening_hours": "Lendi - Vandredi, 7am - 3pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Famasi Fanm Ansent Bon Espwa",
+        "type": "Famasi Fanm Ansent",
+        "description": "Famasi espesyalize pou fanm ansent ak swen tibebe.",
+        "coordinates": {
+            "latitude": 18.5231,
+            "longitude": -72.3005
+        },
+        "address": "Avenue Panaméricaine, Pétion-Ville",
+        "email": "famasifanmansentbonespwa@delmas.ht",
+        "phone": "+509 3284-5772",
+        "opening_hours": "Tout lasemèn, 8am - 4pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Atelye Lakay Atizana",
+        "type": "Atelye Atizana",
+        "description": "Atelye k ap kreye bijou, sak, ak lòt atizana lokal.",
+        "coordinates": {
+            "latitude": 18.5467,
+            "longitude": -72.3389
+        },
+        "address": "Rue Rigaud, Pétion-Ville",
+        "email": "atelyelakayatizana@delmas.ht",
+        "phone": "+509 4013-5538",
+        "opening_hours": "Lendi - Vandredi, 7am - 3pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Espace Tech Delmas",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant fòmasyon pou aprann Devlopman Web ak IT.",
+        "coordinates": {
+            "latitude": 18.538,
+            "longitude": -72.3234
+        },
+        "address": "Delmas 40B, Delmas",
+        "email": "espacetechdelmas@pv.ht",
+        "phone": "+509 4157-7371",
+        "opening_hours": "Tout lasemèn, 8am - 4pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Oganizasyon Manman Solid",
+        "type": "Asosyasyon Sosyal",
+        "description": "Asosyasyon pou fanm viktim vyolans domestik.",
+        "coordinates": {
+            "latitude": 18.5115,
+            "longitude": -72.2932
+        },
+        "address": "Route de Frères, Pétion-Ville",
+        "email": "oganizasyonmanmansolid@pv.ht",
+        "phone": "+509 4254-2232",
+        "opening_hours": "Lendi - Samdi, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Famasi Lakay Nou",
+        "type": "Famasi Tradisyonèl",
+        "description": "Famasi tradisyonèl ak remèd fèy pou tretman natirèl.",
+        "coordinates": {
+            "latitude": 18.539,
+            "longitude": -72.31
+        },
+        "address": "Rue Capois, Port-au-Prince",
+        "email": "famasilakaynou@ekspetiz.ht",
+        "phone": "+509 3189-8673",
+        "opening_hours": "Lendi - Vandredi, 9am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Bibliyotèk Timoun Bèl Lespwa",
+        "type": "Bibliyotèk Kominotè",
+        "description": "Espas pou timoun ak adilt li liv ak patisipe nan atelye.",
+        "coordinates": {
+            "latitude": 18.5208,
+            "longitude": -72.287
+        },
+        "address": "Rue Faubert, Pétion-Ville",
+        "email": "bibliyotèktimounbèllespwa@ekspetiz.ht",
+        "phone": "+509 4674-6815",
+        "opening_hours": "Tout lasemèn, 8am - 4pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Studio Foto Lumière Kreyòl",
+        "type": "Studio Foto",
+        "description": "Studio foto pwofesyonèl pou paspò, portre ak evenman.",
+        "coordinates": {
+            "latitude": 18.5325,
+            "longitude": -72.3271
+        },
+        "address": "Delmas 19, Port-au-Prince",
+        "email": "studiofotolumièrekreyòl@biznis.ht",
+        "phone": "+509 4058-1620",
+        "opening_hours": "Tout lasemèn, 8am - 4pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Zen Fit Center",
+        "type": "Sant Espò ak Fitness",
+        "description": "Sant fitnes ak klas yoga, pilat ak cardio.",
+        "coordinates": {
+            "latitude": 18.5087,
+            "longitude": -72.2833
+        },
+        "address": "Place Boyer, Pétion-Ville",
+        "email": "zenfitcenter@pv.ht",
+        "phone": "+509 4163-7498",
+        "opening_hours": "Lendi - Samdi, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Kooperativ Jaden Soley",
+        "type": "Kooperativ Agrikilti",
+        "description": "Kooperativ agrikilti k ap vann legim fre ak pwodwi lokal.",
+        "coordinates": {
+            "latitude": 18.543,
+            "longitude": -72.3198
+        },
+        "address": "Delmas 75, Delmas",
+        "email": "kooperativjadensoley@pv.ht",
+        "phone": "+509 3749-4419",
+        "opening_hours": "Lendi - Samdi, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Lekòl Teknik Nouvo Vizyon",
+        "type": "Lekòl Teknik",
+        "description": "Lekòl teknik k ap fòme jèn nan domèn elektrik ak plonbri.",
+        "coordinates": {
+            "latitude": 18.5341,
+            "longitude": -72.3124
+        },
+        "address": "Avenue John Brown, Port-au-Prince",
+        "email": "lekòltekniknouvovizyon@biznis.ht",
+        "phone": "+509 4814-3008",
+        "opening_hours": "Lendi - Samdi, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Kreasyon Bel Atis",
+        "type": "Atelye Atizana",
+        "description": "Atelye pou penti sou twal ak fabrikasyon bijou.",
+        "coordinates": {
+            "latitude": 18.5452,
+            "longitude": -72.3375
+        },
+        "address": "Rue Metellus, Pétion-Ville",
+        "email": "kreasyonbelatis@biznis.ht",
+        "phone": "+509 4815-7098",
+        "opening_hours": "Tout lasemèn, 8am - 4pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Espas Fanm Teknoloji",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant edikatif ki mete aksan sou fòmasyon ICT pou fanm.",
+        "coordinates": {
+            "latitude": 18.537,
+            "longitude": -72.3304
+        },
+        "address": "Delmas 60, Delmas",
+        "email": "espasfanmteknoloji@pv.ht",
+        "phone": "+509 3981-1599",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Solidarite Jeunesse Lakay",
+        "type": "Asosyasyon Sosyal",
+        "description": "Oganizasyon jèn pou ede timoun ki nan difikilte lekòl.",
+        "coordinates": {
+            "latitude": 18.5142,
+            "longitude": -72.2905
+        },
+        "address": "Rue Chavannes, Pétion-Ville",
+        "email": "solidaritejeunesselakay@ekspetiz.ht",
+        "phone": "+509 4859-7466",
+        "opening_hours": "Lendi - Vandredi, 9am - 5pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 1",
+        "type": "Klinik Prive",
+        "description": "Sèvis klinik prive nan Delmas.",
+        "coordinates": {
+            "latitude": 18.509814,
+            "longitude": -72.291953
+        },
+        "address": "Delmas 41, Port-au-Prince",
+        "email": "biznisdelmas1@ekspetiz.ht",
+        "phone": "+509 3874-7587",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 2",
+        "type": "Famasi Fanm Ansent",
+        "description": "Sèvis famasi fanm ansent nan Delmas.",
+        "coordinates": {
+            "latitude": 18.547382,
+            "longitude": -72.33981
+        },
+        "address": "Delmas 46, Port-au-Prince",
+        "email": "biznisdelmas2@ekspetiz.ht",
+        "phone": "+509 4304-7973",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Biznis Delmas 3",
+        "type": "Atelye Atizana",
+        "description": "Sèvis atelye atizana nan Delmas.",
+        "coordinates": {
+            "latitude": 18.507097,
+            "longitude": -72.306253
+        },
+        "address": "Delmas 14, Port-au-Prince",
+        "email": "biznisdelmas3@ekspetiz.ht",
+        "phone": "+509 3422-7197",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Biznis Delmas 4",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sèvis sant fòmasyon teknoloji nan Delmas.",
+        "coordinates": {
+            "latitude": 18.543496,
+            "longitude": -72.307135
+        },
+        "address": "Delmas 71, Port-au-Prince",
+        "email": "biznisdelmas4@ekspetiz.ht",
+        "phone": "+509 4666-9696",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 5",
+        "type": "Famasi Tradisyonèl",
+        "description": "Sèvis famasi tradisyonèl nan Delmas.",
+        "coordinates": {
+            "latitude": 18.548426,
+            "longitude": -72.328214
+        },
+        "address": "Delmas 58, Port-au-Prince",
+        "email": "biznisdelmas5@ekspetiz.ht",
+        "phone": "+509 4682-4071",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Biznis Delmas 6",
+        "type": "Bibliyotèk Kominotè",
+        "description": "Sèvis bibliyotèk kominotè nan Delmas.",
+        "coordinates": {
+            "latitude": 18.524211,
+            "longitude": -72.312518
+        },
+        "address": "Delmas 100, Port-au-Prince",
+        "email": "biznisdelmas6@ekspetiz.ht",
+        "phone": "+509 3746-7966",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 7",
+        "type": "Studio Foto",
+        "description": "Sèvis studio foto nan Delmas.",
+        "coordinates": {
+            "latitude": 18.530411,
+            "longitude": -72.325738
+        },
+        "address": "Delmas 47, Port-au-Prince",
+        "email": "biznisdelmas7@ekspetiz.ht",
+        "phone": "+509 3121-2167",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Biznis Delmas 8",
+        "type": "Sant Espò ak Fitness",
+        "description": "Sèvis sant espò ak fitness nan Delmas.",
+        "coordinates": {
+            "latitude": 18.513937,
+            "longitude": -72.306552
+        },
+        "address": "Delmas 85, Port-au-Prince",
+        "email": "biznisdelmas8@ekspetiz.ht",
+        "phone": "+509 4837-8978",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 9",
+        "type": "Kooperativ Agrikilti",
+        "description": "Sèvis kooperativ agrikilti nan Delmas.",
+        "coordinates": {
+            "latitude": 18.508289,
+            "longitude": -72.306332
+        },
+        "address": "Delmas 27, Port-au-Prince",
+        "email": "biznisdelmas9@ekspetiz.ht",
+        "phone": "+509 3085-1429",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 10",
+        "type": "Lekòl Teknik",
+        "description": "Sèvis lekòl teknik nan Delmas.",
+        "coordinates": {
+            "latitude": 18.540851,
+            "longitude": -72.322268
+        },
+        "address": "Delmas 1, Port-au-Prince",
+        "email": "biznisdelmas10@ekspetiz.ht",
+        "phone": "+509 3406-6181",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Biznis Delmas 11",
+        "type": "Restoran Lokal",
+        "description": "Sèvis restoran lokal nan Delmas.",
+        "coordinates": {
+            "latitude": 18.515079,
+            "longitude": -72.288995
+        },
+        "address": "Delmas 90, Port-au-Prince",
+        "email": "biznisdelmas11@ekspetiz.ht",
+        "phone": "+509 4285-5338",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 12",
+        "type": "Boutik Elektwonik",
+        "description": "Sèvis boutik elektwonik nan Delmas.",
+        "coordinates": {
+            "latitude": 18.547635,
+            "longitude": -72.295608
+        },
+        "address": "Delmas 75, Port-au-Prince",
+        "email": "biznisdelmas12@ekspetiz.ht",
+        "phone": "+509 3463-1035",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 13",
+        "type": "Sant Kominotè",
+        "description": "Sèvis sant kominotè nan Delmas.",
+        "coordinates": {
+            "latitude": 18.524933,
+            "longitude": -72.284814
+        },
+        "address": "Delmas 86, Port-au-Prince",
+        "email": "biznisdelmas13@ekspetiz.ht",
+        "phone": "+509 3929-1231",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 14",
+        "type": "Salon Koutur",
+        "description": "Sèvis salon koutur nan Delmas.",
+        "coordinates": {
+            "latitude": 18.506234,
+            "longitude": -72.329
+        },
+        "address": "Delmas 88, Port-au-Prince",
+        "email": "biznisdelmas14@ekspetiz.ht",
+        "phone": "+509 4477-7585",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Biznis Delmas 15",
+        "type": "Kafe Atizanal",
+        "description": "Sèvis kafe atizanal nan Delmas.",
+        "coordinates": {
+            "latitude": 18.543283,
+            "longitude": -72.323379
+        },
+        "address": "Delmas 39, Port-au-Prince",
+        "email": "biznisdelmas15@ekspetiz.ht",
+        "phone": "+509 3549-9160",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Kay Sante Tabarre",
+        "type": "Klinik Prive",
+        "description": "Sèvis klinik prive pou konsiltasyon ak swen debaz.",
+        "coordinates": { "latitude": 18.5821, "longitude": -72.3052 },
+        "address": "Tabarre 23, Port-au-Prince",
+        "email": "kaysantetabarre@ekspetiz.ht",
+        "phone": "+509 3921-8820",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Famasi Tabarre Lasante",
+        "type": "Famasi Fanm Ansent",
+        "description": "Famasi espesyalize pou fanm ansent ak tibebe.",
+        "coordinates": { "latitude": 18.5835, "longitude": -72.3028 },
+        "address": "Tabarre 41, Port-au-Prince",
+        "email": "famasitabarre@ekspetiz.ht",
+        "phone": "+509 3312-7709",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Atizana Tabarre Lakay",
+        "type": "Atelye Atizana",
+        "description": "Atelye pou kreye atizana ak bijou lokal.",
+        "coordinates": { "latitude": 18.5807, "longitude": -72.2994 },
+        "address": "Tabarre 12, Port-au-Prince",
+        "email": "atizanatabarrelakay@ekspetiz.ht",
+        "phone": "+509 4023-1134",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Tek Tabarre",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant fòmasyon teknoloji pou jèn pwofesyonèl.",
+        "coordinates": { "latitude": 18.5859, "longitude": -72.3080 },
+        "address": "Tabarre 47, Port-au-Prince",
+        "email": "tektabarre@ekspetiz.ht",
+        "phone": "+509 4158-6720",
+        "opening_hours": "Lendi - Samdi, 9am - 6pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Boutik Tradisyon Tabarre",
+        "type": "Famasi Tradisyonèl",
+        "description": "Famasi tradisyonèl ak remèd natirèl.",
+        "coordinates": { "latitude": 18.5798, "longitude": -72.2965 },
+        "address": "Tabarre 30, Port-au-Prince",
+        "email": "boutiktradisyon@ekspetiz.ht",
+        "phone": "+509 3802-6678",
+        "opening_hours": "Lendi - Vandredi, 9am - 5pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Bibliyotèk Lespwa Tabarre",
+        "type": "Bibliyotèk Kominotè",
+        "description": "Bibliyotèk pou timoun ak granmoun nan kominote a.",
+        "coordinates": { "latitude": 18.5813, "longitude": -72.3041 },
+        "address": "Tabarre 15, Port-au-Prince",
+        "email": "bibliyotektabarre@ekspetiz.ht",
+        "phone": "+509 4675-2234",
+        "opening_hours": "Tout lasemèn, 8am - 4pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Studio Flash Tabarre",
+        "type": "Studio Foto",
+        "description": "Studio foto pou paspò, portre ak evenman.",
+        "coordinates": { "latitude": 18.5840, "longitude": -72.3075 },
+        "address": "Tabarre 55, Port-au-Prince",
+        "email": "studioflashtabarre@ekspetiz.ht",
+        "phone": "+509 4855-9011",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Zen Espò Tabarre",
+        "type": "Sant Espò ak Fitness",
+        "description": "Sant espò ak fitness pou sante fizik ak mantal.",
+        "coordinates": { "latitude": 18.5790, "longitude": -72.2988 },
+        "address": "Tabarre 18, Port-au-Prince",
+        "email": "zenespotabarre@ekspetiz.ht",
+        "phone": "+509 3988-7123",
+        "opening_hours": "Lendi - Samdi, 7am - 3pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Koop Jaden Tabarre",
+        "type": "Kooperativ Agrikilti",
+        "description": "Kooperativ ki vann pwodwi legim ak fwi lokal.",
+        "coordinates": { "latitude": 18.5827, "longitude": -72.3009 },
+        "address": "Tabarre 36, Port-au-Prince",
+        "email": "koopjadentabarre@ekspetiz.ht",
+        "phone": "+509 3740-8821",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Kafe Kiltirèl Tabarre",
+        "type": "Kafe Atizanal",
+        "description": "Kafe atizanal ak espas pou aktivite kiltirèl.",
+        "coordinates": { "latitude": 18.5832, "longitude": -72.3056 },
+        "address": "Tabarre 25, Port-au-Prince",
+        "email": "kafekiltireltabarre@ekspetiz.ht",
+        "phone": "+509 4029-4412",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Klinik Soley Leve",
+        "type": "Klinik Prive",
+        "description": "Yon klinik prive ki bay swen prensipal pou fanmi yo nan Carrefour.",
+        "coordinates": { "latitude": 18.5320, "longitude": -72.4075 },
+        "address": "Avenue Christophe, Carrefour",
+        "email": "klinikesoleyleve@ekspetiz.ht",
+        "phone": "+509 3720-1123",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Famasi Fanm Pou Demen",
+        "type": "Famasi Fanm Ansent",
+        "description": "Famasi dedye a fanm ansent ak swen tibebe nan zòn Carrefour.",
+        "coordinates": { "latitude": 18.5305, "longitude": -72.4120 },
+        "address": "Route de Mariani, Carrefour",
+        "email": "famasifanmpoudemen@ekspetiz.ht",
+        "phone": "+509 3985-5544",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Atelye Bèl Mèsi",
+        "type": "Atelye Atizana",
+        "description": "Atelye atizana lokal pou fabrike sak, bijou ak dekorasyon.",
+        "coordinates": { "latitude": 18.5280, "longitude": -72.4102 },
+        "address": "Rue Commerce, Carrefour",
+        "email": "atelyebelmesi@ekspetiz.ht",
+        "phone": "+509 4025-3341",
+        "opening_hours": "Lendi - Samdi, 8am - 4pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Espas Teknolojik Jèn Carrefour",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant fòmasyon nan teknoloji pou jèn yo nan Carrefour.",
+        "coordinates": { "latitude": 18.5268, "longitude": -72.4050 },
+        "address": "Boulevard Jean Jacques Dessalines, Carrefour",
+        "email": "espasteknolojikjen@ekspetiz.ht",
+        "phone": "+509 4211-8899",
+        "opening_hours": "Lendi - Vandredi, 9am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Kafe Kiltirèl Lakay",
+        "type": "Kafe Atizanal",
+        "description": "Kafe ak espas kiltirèl pou atis ak kominote a.",
+        "coordinates": { "latitude": 18.5294, "longitude": -72.4088 },
+        "address": "Place Carrefour, Carrefour",
+        "email": "kafekiltirellakay@ekspetiz.ht",
+        "phone": "+509 3872-6689",
+        "opening_hours": "Tout lasemèn, 10am - 7pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Klinik Fanm Viktwa",
+        "type": "Klinik Prive",
+        "description": "Klinik prive ki bay swen jeneral ak espesyalite pou fanm.",
+        "coordinates": { "latitude": 18.5240, "longitude": -72.3275 },
+        "address": "Avenue Magloire Ambroise, Carrefour-Feuilles",
+        "email": "klinikfanmviktwa@ekspetiz.ht",
+        "phone": "+509 3870-4421",
+        "opening_hours": "Lendi - Vandredi, 8am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Famasi Gran Bwa",
+        "type": "Famasi Tradisyonèl",
+        "description": "Famasi lokal ki vann remèd natirèl ak medikaman.",
+        "coordinates": { "latitude": 18.5255, "longitude": -72.3330 },
+        "address": "Rue Monseigneur Guilloux, Carrefour-Feuilles",
+        "email": "famasigranbwa@ekspetiz.ht",
+        "phone": "+509 4021-9933",
+        "opening_hours": "Tout lasemèn, 9am - 6pm",
+        "is_hiring": false,
+        "accepts_remote_work": false
+    },
+    {
+        "name": "Atelye Dèyè Mòn",
+        "type": "Atelye Atizana",
+        "description": "Atelye atizana ki fabrike pwodwi lokal pou vann nan mache.",
+        "coordinates": { "latitude": 18.5208, "longitude": -72.3285 },
+        "address": "Dèyè Mòn, Carrefour-Feuilles",
+        "email": "atelyedeyemon@ekspetiz.ht",
+        "phone": "+509 4018-7712",
+        "opening_hours": "Lendi - Samdi, 8am - 4pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Sant Rechaj Konesans",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant edikasyon teknoloji ak fòmasyon sou baz ICT.",
+        "coordinates": { "latitude": 18.5215, "longitude": -72.3350 },
+        "address": "Rue St-Martin, Carrefour-Feuilles",
+        "email": "santrechajkonesans@ekspetiz.ht",
+        "phone": "+509 3944-8800",
+        "opening_hours": "Lendi - Vandredi, 9am - 5pm",
+        "is_hiring": true,
+        "accepts_remote_work": true
+    },
+    {
+        "name": "Kafe Lakay Nou",
+        "type": "Kafe Atizanal",
+        "description": "Kafe atizanal ak espas sosyal pou jèn nan kominote a.",
+        "coordinates": { "latitude": 18.5232, "longitude": -72.3312 },
+        "address": "Place Carrefour-Feuilles, Port-au-Prince",
+        "email": "kafelakaynou@ekspetiz.ht",
+        "phone": "+509 4781-6654",
+        "opening_hours": "Tout lasemèn, 10am - 8pm",
+        "is_hiring": false,
+        "accepts_remote_work": true
+    }
+]

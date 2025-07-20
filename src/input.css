@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --scale-factor: 1.414;
+
+    --text-body: 0.95rem;
+    --font-body: 'Noto Sans', sans-serif;
+    --font-title: 'Urbanist', sans-serif;
+
+    --color-fountain-blue-50: #f0fafb;
+    --color-fountain-blue-100: #d9f1f4;
+    --color-fountain-blue-200: #b7e4ea;
+    --color-fountain-blue-300: #85cfdb;
+    --color-fountain-blue-400: #57b6c7;
+    --color-fountain-blue-500: #3196a9;
+    --color-fountain-blue-600: #2b798f;
+    --color-fountain-blue-700: #296475;
+    --color-fountain-blue-800: #295361;
+    --color-fountain-blue-900: #264653;
+    --color-fountain-blue-950: #142d38;
+
+    --color-yellow-orange-50: #fff9ed;
+    --color-yellow-orange-100: #fef1d6;
+    --color-yellow-orange-200: #fddfab;
+    --color-yellow-orange-300: #fbc776;
+    --color-yellow-orange-400: #f9ac4e;
+    --color-yellow-orange-500: #f68a19;
+    --color-yellow-orange-600: #e76e0f;
+    --color-yellow-orange-700: #c0540e;
+    --color-yellow-orange-800: #984214;
+    --color-yellow-orange-900: #7b3813;
+    --color-yellow-orange-950: #421a08;
+
+    --color-mercury-50: #f7f7f7;
+    --color-mercury-100: #e6e6e6;
+    --color-mercury-200: #dfdfdf;
+    --color-mercury-300: #c8c8c8;
+    --color-mercury-400: #adadad;
+    --color-mercury-500: #999999;
+    --color-mercury-600: #888888;
+    --color-mercury-700: #7b7b7b;
+    --color-mercury-800: #676767;
+    --color-mercury-900: #545454;
+    --color-mercury-950: #363636;
+
+    --color-woodsmoke-50: #f6f6f6;
+    --color-woodsmoke-100: #e7e7e7;
+    --color-woodsmoke-200: #d1d1d1;
+    --color-woodsmoke-300: #b0b0b0;
+    --color-woodsmoke-400: #888888;
+    --color-woodsmoke-500: #6d6d6d;
+    --color-woodsmoke-600: #5d5d5d;
+    --color-woodsmoke-700: #4f4f4f;
+    --color-woodsmoke-800: #454545;
+    --color-woodsmoke-900: #3d3d3d;
+    --color-woodsmoke-950: #191919;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header nav{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 0 1.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+    color: var(--color-woodsmoke-950);
+}
+
+.nav-link-item{
+    color: var(--color-mercury-400);
+}
+
+.nav-link-item:hover{
+    color: var(--color-mercury-800);
+}
+
+.nav-link-item.active{
+    color: var(--color-woodsmoke-950);
+    
+    font-weight: 600;
+}
+
+.nav-cta-item {
+    padding: 7.5px 15px;
+
+    border-radius: 6px;
+}
+
+.nav-cta-item a {
+    width: 100%;
+    height: 100%;
+
+    font-weight: 700;
+}
+
+.nav-cta-item:nth-of-type(2) {
+    background-color: var(--color-woodsmoke-950);
+    color: var(--color-mercury-50);
+}
+
+#header-title-container h1 {
+    font-size: clamp(2.5rem, 5vh, 5rem); /* Min: 2.5rem, Ideal: 5% of viewport height, Max: 5rem */
+    line-height: 1.2;
+}
+
+#header-title-container .header-title-circle {
+    width: clamp(2rem, 5vh, 4rem);
+    height: clamp(2rem, 5vh, 4rem);
+}
+
+
+.header-title-circle{
+    background-size: cover;
+}
+
+#header-title-first-line-circles-container .header-title-circle:nth-of-type(1){
+    background-image: url(../assets/img/00.png);
+}
+#header-title-first-line-circles-container .header-title-circle:nth-of-type(2){
+    background-image: url(../assets/img/01.png);
+}
+#header-title-first-line-circles-container .header-title-circle:nth-of-type(3){
+    background-image: url(../assets/img/02.png);
+}
+#header-title-second-line-circles-container .header-title-circle:nth-of-type(1){
+    background-image: url(../assets/img/03.png);
+}
+#header-title-second-line-circles-container .header-title-circle:nth-of-type(2){
+    background-image: url(../assets/img/04.png);
+}
+#header-title-second-line-circles-container .header-title-circle:nth-of-type(3){
+    background-image: url(../assets/img/05.png);
+}
+#header-title-third-line-circles-container .header-title-circle:nth-of-type(1){
+    background-image: url(../assets/img/06.png);
+}
+#header-title-third-line-circles-container .header-title-circle:nth-of-type(2){
+    background-image: url(../assets/img/07.png);
+}
+#header-title-third-line-circles-container .header-title-circle:nth-of-type(3){
+    background-image: url(../assets/img/08.png);
+}
+
+.domain-option-preview-container{
+    background-size: cover;
+}
+
+.quest-form-dropdown-btn-chevron-container {
+    transition: transform 0.3s ease;
+}
+
+.quest-form-dropdown-btn-chevron-container.rotate {
+    transform: rotate(180deg);
+}
+
+#quest-suggestions {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* General styling for the range inputs */
+#range-min,
+#range-max {
+    width: 100%;
+    height: 2px; /* Or whatever height your track has */
+    position: absolute; /* Essential for stacking */
+    /* background: transparent; */ /* Make the track itself transparent if it's causing issues */
+    appearance: none; /* Reset default browser styles */
+    -webkit-appearance: none;
+    pointer-events: none; /* Make the *entire* input non-interactive by default */
+}
+
+/* Now, target the thumb and make *only* it interactable */
+#range-min::-webkit-slider-thumb,
+#range-max::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    /* Your existing thumb styles for size, background, border, etc. */
+    width: 1.3rem; /* Adjust size to fit your icon */
+    height: 1.3rem; /* Adjust size */
+    background-color: var(--color-fountain-blue-600); /* Or whatever background color you want for the thumb */
+    border-radius: 6px;
+    cursor: grab;
+    pointer-events: auto; /* Essential for interaction */
+
+    /* Add your SVG as a background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%; /* Adjust as needed to fit the icon inside the thumb */
+    border: 1px solid #fff; /* Optional: border around the thumb */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+
+    color: white;
+
+    transform: translateY(2.5px);
+}
+
+#range-max::-webkit-slider-thumb{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18 12h-6m0 0H6m6 0V6m0 6v6' /%3E%3C/svg%3E");
+}
+#range-min::-webkit-slider-thumb{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 12h12'/%3E%3C/svg%3E");
+}
+
+#range-min::-moz-range-thumb,
+#range-max::-moz-range-thumb {
+    /* Similar styles for Firefox */
+    pointer-events: auto;
+}
+
+#range-min::-ms-thumb,
+#range-max::-ms-thumb {
+    /* Similar styles for IE/Edge */
+    pointer-events: auto;
+}
+
+/* The z-index strategy for ensuring the active handle is on top */
+/* This is crucial for when handles are close to each other */
+#range-min {
+    z-index: 2; /* Default z-index for min */
+}
+#range-max {
+    z-index: 1; /* Default z-index for max */
+}
+
+/* JavaScript will dynamically update z-index for the active handle */
+.active-handle {
+    z-index: 3 !important; /* Make the currently dragged handle highest */
+}
+
+#address-suggestions div {
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#address-suggestions div:last-child {
+    border-bottom: none;
+}

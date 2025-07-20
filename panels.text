@@ -1,0 +1,188 @@
+<div id="header-quest-form-dropdowns-panels-container" class="relative w-full h-auto">
+    <div id="domain-dropdown-panel" class="hidden flex flex-col gap-y-4 absolute top-[calc(100%+10px)] left-0 w-full bg-white rounded-lg shadow-lg px-2 py-2 z-20">
+        <div id="domain-dropdown-panel-tabs-container" class="w-full h-12 flex flex-row gap-x-4">
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="agrikilti" class="peer hidden">
+                        <div class="flex flex-row gap-x-2 items-center">
+                            <span class="font-semibold text-md">Agrikilti</span>
+                        </div>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="elvaj" class="peer hidden">
+                        <span class="font-semibold text-md">Elvaj</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="edikasyon" class="peer hidden">
+                        <span class="font-semibold text-md">Edikasyon</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="atizana" class="peer hidden">
+                        <span class="font-semibold text-md">Atizana</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="sante" class="peer hidden">
+                        <span class="font-semibold text-md">Sante</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="sekirite" class="peer hidden">
+                        <span class="font-semibold text-md">Sekirite</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="teknoloji" class="peer hidden">
+                        <span class="font-semibold text-md">Teknoloji</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="rechèch" class="peer hidden">
+                        <span class="font-semibold text-md">Rechèch</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="rechèch" class="peer hidden">
+                        <span class="font-semibold text-md">Teknik</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+                <div class="dropdown-panel-tab flex flex-row gap-x-2">
+                    <label class="domain-option flex flex-row gap-x-2 items-center cursor-pointer select-none" data-selected="false">
+                        <div class="checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center border-mercury-300 peer-checked:bg-woodsmoke-950">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                            </svg>
+                        </div>
+                        <input type="checkbox" name="domain" value="komès" class="peer hidden">
+                        <span class="font-semibold text-md">Komès</span>
+                        <span class="tab-selected-count hidden bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm text-fountain-blue-950">1</span>
+                    </label>
+                </div>
+        </div>
+        <div id="domain-dropdown-panel-body" class="w-full h-auto">
+            <div class="domain-panel w-auto h-auto flex flex-row gap-x-4 flex-1">
+                <div class="domain-option w-auto h-auto flex flex-col gap-y-2">
+                    <div class="domain-option-preview-container aspect-square w-50 rounded-md relative" style="background-image: url(./assets/img/okipasyon/04.png);background-size: cover;">
+                        <label for="agrikilti-plante" class="domain-option-label cursor-pointer">
+                            <input type="checkbox" name="agrikilti-options" value="plante" id="agrikilti-plante" class="peer hidden">
+                            <div class="domain-option-checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center bg-white border-mercury-300 peer-checked:bg-woodsmoke-950 absolute top-2 left-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="domain-option-info flex flex-col">
+                        <h5 class="font-medium">Plantè • Kiltivatè</h5>
+                        <p class="text-sm text-woodsmoke-400">
+                            <span>000</span>
+                            <span>korespondans</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="domain-option w-auto h-auto flex flex-col gap-y-2">
+                    <div class="domain-option-preview-container aspect-square w-50 rounded-md relative" style="background-image: url(./assets/img/okipasyon/05.png);background-size: cover;">
+                        <label for="agrikilti-jadinaj" class="domain-option-label cursor-pointer">
+                            <input type="checkbox" name="agrikilti-options" value="jadinaj" id="agrikilti-jadinaj" class="peer hidden">
+                            <div class="domain-option-checkmark w-4.5 h-4.5 border rounded-sm flex items-center justify-center bg-white border-mercury-300 peer-checked:bg-woodsmoke-950 absolute top-2 left-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-white hidden peer-checked:block">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 13.626l1.606 1.722c.886.95 1.329 1.424 1.825 1.574c.436.131.9.096 1.315-.1c.473-.224.852-.761 1.612-1.836L18 7" />
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="domain-option-info flex flex-col">
+                        <h5 class="font-medium">Jadinaj</h5>
+                        <p class="text-sm text-woodsmoke-400">
+                            <span>000</span>
+                            <span>korespondans</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="domain-panel w-full h-auto hidden flex-row gap-x-4">
+                <div class="domain-option w-auto h-auto flex flex-col gap-y-2">
+
+                </div>
+            </div>
+            <div class="domain-panel w-full h-auto hidden flex-row gap-x-4">
+                <div class="domain-option w-auto h-auto flex flex-col gap-y-2">
+
+                </div>
+            </div>
+            <div class="domain-panel w-full h-auto hidden flex-row gap-x-4">
+                <div class="domain-option w-auto h-auto flex flex-col gap-y-2">
+
+                </div>
+            </div>
+        </div>
+        <div id="domain-dropdown-panel-footer" class="w-full h-auto flex flex-row gap-x-4 justify-end">
+            <a href="http://" class="font-medium underline text-yellow-orange-600 text-sm">Siyale yon pwoblèm.</a>
+        </div>
+    </div>
+</div>

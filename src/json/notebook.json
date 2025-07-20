@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Kay Tika Sante",
+        "type": "Klinik Prive",
+        "description": "Yon ti klinik prive ki ofri swen prensipal ak kontwòl tansyon.",
+        "coordinates": {
+            "latitude": 18.5402,
+            "longitude": -72.3318
+        },
+        "address": "Rue Desmirieux, Delmas 33, Port-au-Prince"
+    },
+    {
+        "name": "Famasi Fanm Ansent Bon Espwa",
+        "type": "Famasi Fanm Ansent",
+        "description": "Famasi espesyalize pou fanm ansent ak swen tibebe.",
+        "coordinates": {
+            "latitude": 18.5231,
+            "longitude": -72.3005
+        },
+        "address": "Avenue Panaméricaine, Pétion-Ville"
+    },
+    {
+        "name": "Atelye Lakay Atizana",
+        "type": "Atelye Atizana",
+        "description": "Atelye k ap kreye bijou, sak, ak lòt atizana lokal.",
+        "coordinates": {
+            "latitude": 18.5467,
+            "longitude": -72.3389
+        },
+        "address": "Rue Rigaud, Pétion-Ville"
+    },
+    {
+        "name": "Espace Tech Delmas",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant fòmasyon pou aprann Devlopman Web ak IT.",
+        "coordinates": {
+            "latitude": 18.5380,
+            "longitude": -72.3234
+        },
+        "address": "Delmas 40B, Delmas"
+    },
+    {
+        "name": "Oganizasyon Manman Solid",
+        "type": "Asosyasyon Sosyal",
+        "description": "Asosyasyon pou fanm viktim vyolans domestik.",
+        "coordinates": {
+            "latitude": 18.5115,
+            "longitude": -72.2932
+        },
+        "address": "Route de Frères, Pétion-Ville"
+    },
+    {
+        "name": "Famasi Lakay Nou",
+        "type": "Famasi Tradisyonèl",
+        "description": "Famasi tradisyonèl ak remèd fèy pou tretman natirèl.",
+        "coordinates": {
+            "latitude": 18.5390,
+            "longitude": -72.3100
+        },
+        "address": "Rue Capois, Port-au-Prince"
+    },
+    {
+        "name": "Bibliyotèk Timoun Bèl Lespwa",
+        "type": "Bibliyotèk Kominotè",
+        "description": "Espas pou timoun ak adilt li liv ak patisipe nan atelye.",
+        "coordinates": {
+            "latitude": 18.5208,
+            "longitude": -72.2870
+        },
+        "address": "Rue Faubert, Pétion-Ville"
+    },
+    {
+        "name": "Studio Foto Lumière Kreyòl",
+        "type": "Studio Foto",
+        "description": "Studio foto pwofesyonèl pou paspò, portre ak evenman.",
+        "coordinates": {
+            "latitude": 18.5325,
+            "longitude": -72.3271
+        },
+        "address": "Delmas 19, Port-au-Prince"
+    },
+    {
+        "name": "Zen Fit Center",
+        "type": "Sant Espò ak Fitness",
+        "description": "Sant fitnes ak klas yoga, pilat ak cardio.",
+        "coordinates": {
+            "latitude": 18.5087,
+            "longitude": -72.2833
+        },
+        "address": "Place Boyer, Pétion-Ville"
+    },
+    {
+        "name": "Kooperativ Jaden Soley",
+        "type": "Kooperativ Agrikilti",
+        "description": "Kooperativ agrikilti k ap vann legim fre ak pwodwi lokal.",
+        "coordinates": {
+            "latitude": 18.5430,
+            "longitude": -72.3198
+        },
+        "address": "Delmas 75, Delmas"
+    },
+    {
+        "name": "Lekòl Teknik Nouvo Vizyon",
+        "type": "Lekòl Teknik",
+        "description": "Lekòl teknik k ap fòme jèn nan domèn elektrik ak plonbri.",
+        "coordinates": {
+            "latitude": 18.5341,
+            "longitude": -72.3124
+        },
+        "address": "Avenue John Brown, Port-au-Prince"
+    },
+    {
+        "name": "Kreasyon Bel Atis",
+        "type": "Atelye Atizana",
+        "description": "Atelye pou penti sou twal ak fabrikasyon bijou.",
+        "coordinates": {
+            "latitude": 18.5452,
+            "longitude": -72.3375
+        },
+        "address": "Rue Metellus, Pétion-Ville"
+    },
+    {
+        "name": "Espas Fanm Teknoloji",
+        "type": "Sant Fòmasyon Teknoloji",
+        "description": "Sant edikatif ki mete aksan sou fòmasyon ICT pou fanm.",
+        "coordinates": {
+            "latitude": 18.5370,
+            "longitude": -72.3304
+        },
+        "address": "Delmas 60, Delmas"
+    },
+    {
+        "name": "Solidarite Jeunesse Lakay",
+        "type": "Asosyasyon Sosyal",
+        "description": "Oganizasyon jèn pou ede timoun ki nan difikilte lekòl.",
+        "coordinates": {
+            "latitude": 18.5142,
+            "longitude": -72.2905
+        },
+        "address": "Rue Chavannes, Pétion-Ville"
+    }
+]
