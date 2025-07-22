@@ -71,6 +71,8 @@ export function setupCustomCheckboxes() {
         const checkmarkBox = option.querySelector('.checkmark, .domain-option-checkmark');
 
         checkbox.addEventListener('change', () => {
+            markButtonModified('domain-dropdown-btn', true);
+            
             if (checkbox.checked) {
                 checkmark.classList.remove('hidden');
                 checkmarkBox.classList.add('bg-woodsmoke-950');

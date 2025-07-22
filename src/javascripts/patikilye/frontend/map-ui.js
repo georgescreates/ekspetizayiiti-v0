@@ -1,3 +1,8 @@
+import { db } from '../firebase/firebaseConfig.js';
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+import { populateHeaderCards } from "./quest-form.js"
+
 const rangeMin = document.getElementById('range-min');
 const rangeMax = document.getElementById('range-max');
 const rangeMinValue = document.getElementById('range-min-value');
@@ -9,62 +14,68 @@ const addressInput = document.getElementById('location-panel-address-input');
 
 let microZonesGeoJSON = null;
 
-let allBusinessPoints = [];
+// let allBusinessPoints = [];
 let markers = [];
 
 export function updateRangeUI() {
     let min = parseInt(rangeMin.value);
     let max = parseInt(rangeMax.value);
 
-    // Prevent overlap with buffer of 5
-    if (min > max - 5) {
-        min = max - 5;
-        rangeMin.value = min;
-    }
+    const minAttribute = parseInt(rangeMin.min); // Get actual min attribute for range-min
+    const maxAttribute = parseInt(rangeMax.max); // Get actual max attribute for range-max
 
-    if (max < min + 5) {
-        max = min + 5;
-        rangeMax.value = max;
-    }
+    const minGap = 5;
 
     const maxRange = parseInt(rangeMax.max);
 
+    // Rule 1: min cannot exceed (max - minGap)
+    if (min > max - minGap) {
+        min = max - minGap;
+        // Ensure min doesn't go below its own attribute min
+        if (min < minAttribute) {
+            min = minAttribute;
+        }
+        rangeMin.value = min;
+    }
+
+    // Rule 2: max cannot be less than (min + minGap)
+    if (max < min + minGap) {
+        max = min + minGap;
+        // Ensure max doesn't go above its own attribute max
+        if (max > maxAttribute) {
+            max = maxAttribute;
+        }
+        rangeMax.value = max;
+    }
+
+    // Update text values
     rangeMinValue.textContent = `${min} km`;
     rangeMaxValue.textContent = `${max} km`;
 
+    // Calculate percentage positions
     const percentMin = (min / maxRange) * 100;
     const percentMax = (max / maxRange) * 100;
 
+    // Prevent negative width for the range track
+    const width = Math.max(0, percentMax - percentMin);
+
     rangeTrack.style.left = `${percentMin}%`;
-    rangeTrack.style.width = `${percentMax - percentMin}%`;
+    rangeTrack.style.width = `${width}%`;
 
-    // Automatic handle priority
-    if (Math.abs(min - max) <= 5) {
-        // If handles are close, prioritize the one being dragged
-        // Otherwise, decide based on last moved value
-    }
-
-    // Remove active-handle class from both
+    // Visual handle priority (active handle)
     rangeMin.classList.remove('active-handle');
     rangeMax.classList.remove('active-handle');
 
-    // Add active-handle to the currently dragged one
     if (lastActive === 'min') {
         rangeMin.classList.add('active-handle');
-        // Also ensure rangeMin has pointer-events: auto on its thumb
     } else if (lastActive === 'max') {
         rangeMax.classList.add('active-handle');
-        // Also ensure rangeMax has pointer-events: auto on its thumb
     }
 
-    // Update the map circle radius
-    if (map && map.getSource('radius-circle')) {
-        const circleData = turf.circle(circleCenter, max, { steps: 64, units: 'kilometers' });
-        map.getSource('radius-circle').setData(circleData);
-    }
-
+    // Update markers based on new range
     updateVisibleMarkers();
 }
+
 
 let lastActive = null;
 
@@ -171,6 +182,8 @@ recenterBtn.addEventListener('click', () => {
         zoom: 11,
         essential: true
     });
+
+    populateHeaderCards();
 });
 
 
@@ -224,6 +237,8 @@ addressInput.addEventListener('input', async (e) => {
         const centerPoint = turf.center(localMatch).geometry.coordinates;
         circleCenter = centerPoint;
 
+        populateHeaderCards();
+
         map.setLayoutProperty('microzones-outline', 'visibility', 'visible');
         map.setFilter('microzones-outline', ['==', ['get', 'NAME_4'], localMatch.properties.NAME_4]);
 
@@ -253,6 +268,8 @@ addressInput.addEventListener('input', async (e) => {
             circleCenter = [lng, lat];
 
             map.flyTo({ center: circleCenter, zoom: 11 });
+
+            populateHeaderCards();
 
             // Find matching section in Level 3 data to outline if available
             if (microZonesGeoJSON) {
@@ -300,22 +317,36 @@ export function searchLocalMicroZone(query) {
     });
 }
 
-async function loadBusinessData() {
-    const response = await fetch('./src/json/notebook-business.json');
-    const data = await response.json();
-    allBusinessPoints = data;
-    window.allBusinessPoints = data;
+export async function loadBusinessData() {
+    const querySnapshot = await getDocs(collection(db, "businesses"));
+    const businesses = [];
+
+    querySnapshot.forEach((doc) => {
+        businesses.push(doc.data());
+    });
+
+    window.allBusinessPoints = businesses; // Keep your existing logic compatible
 }
 
 function updateVisibleMarkers() {
+    if (!window.allBusinessPoints || window.allBusinessPoints.length === 0) {
+        console.warn('Business data not loaded yet.');
+        return;
+    }
+
     // Clear previous markers
     markers.forEach(marker => marker.remove());
     markers = [];
 
-    const maxDistance = parseInt(rangeMax.value); // in km
+    const maxDistance = parseInt(rangeMax.value);
     let matchCount = 0;
 
-    allBusinessPoints.forEach(biz => {
+    window.allBusinessPoints.forEach(biz => {
+        if (!biz.coordinates || biz.coordinates.longitude === undefined || biz.coordinates.latitude === undefined) {
+            console.warn(`Skipping business "${biz.name}" due to missing coordinates.`);
+            return; // Skip this entry
+        }
+
         const bizPoint = turf.point([biz.coordinates.longitude, biz.coordinates.latitude]);
         const centerPoint = turf.point(circleCenter);
         const distance = turf.distance(centerPoint, bizPoint, { units: 'kilometers' });
@@ -343,7 +374,6 @@ function updateVisibleMarkers() {
         }
     });
 
-    // Update the result count dynamically
     const resultCountElement = document.getElementById('location-panel-result-count');
     if (resultCountElement) {
         resultCountElement.textContent = matchCount;
@@ -367,4 +397,4 @@ function createCustomPopup(biz) {
     return container;
 }
 
-window.map = map;
+export { circleCenter };

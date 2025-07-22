@@ -61,6 +61,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* 
 header nav{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -72,19 +73,23 @@ header nav{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     
     color: var(--color-woodsmoke-950);
+} */
+
+header nav {
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.nav-link-item{
+.nav-link-item {
     color: var(--color-mercury-400);
 }
 
-.nav-link-item:hover{
+.nav-link-item:hover {
     color: var(--color-mercury-800);
 }
 
-.nav-link-item.active{
+.nav-link-item.active {
     color: var(--color-woodsmoke-950);
-    
+
     font-weight: 600;
 }
 
@@ -106,8 +111,13 @@ header nav{
     color: var(--color-mercury-50);
 }
 
+.profile-avatar-container.active{
+    border: 2px solid var(--color-yellow-orange-600);
+}
+
 #header-title-container h1 {
-    font-size: clamp(2.5rem, 5vh, 5rem); /* Min: 2.5rem, Ideal: 5% of viewport height, Max: 5rem */
+    font-size: clamp(2.5rem, 5vh, 5rem);
+    /* Min: 2.5rem, Ideal: 5% of viewport height, Max: 5rem */
     line-height: 1.2;
 }
 
@@ -117,39 +127,47 @@ header nav{
 }
 
 
-.header-title-circle{
+.header-title-circle {
     background-size: cover;
 }
 
-#header-title-first-line-circles-container .header-title-circle:nth-of-type(1){
+#header-title-first-line-circles-container .header-title-circle:nth-of-type(1) {
     background-image: url(../assets/img/00.png);
 }
-#header-title-first-line-circles-container .header-title-circle:nth-of-type(2){
+
+#header-title-first-line-circles-container .header-title-circle:nth-of-type(2) {
     background-image: url(../assets/img/01.png);
 }
-#header-title-first-line-circles-container .header-title-circle:nth-of-type(3){
+
+#header-title-first-line-circles-container .header-title-circle:nth-of-type(3) {
     background-image: url(../assets/img/02.png);
 }
-#header-title-second-line-circles-container .header-title-circle:nth-of-type(1){
+
+#header-title-second-line-circles-container .header-title-circle:nth-of-type(1) {
     background-image: url(../assets/img/03.png);
 }
-#header-title-second-line-circles-container .header-title-circle:nth-of-type(2){
+
+#header-title-second-line-circles-container .header-title-circle:nth-of-type(2) {
     background-image: url(../assets/img/04.png);
 }
-#header-title-second-line-circles-container .header-title-circle:nth-of-type(3){
+
+#header-title-second-line-circles-container .header-title-circle:nth-of-type(3) {
     background-image: url(../assets/img/05.png);
 }
-#header-title-third-line-circles-container .header-title-circle:nth-of-type(1){
+
+#header-title-third-line-circles-container .header-title-circle:nth-of-type(1) {
     background-image: url(../assets/img/06.png);
 }
-#header-title-third-line-circles-container .header-title-circle:nth-of-type(2){
+
+#header-title-third-line-circles-container .header-title-circle:nth-of-type(2) {
     background-image: url(../assets/img/07.png);
 }
-#header-title-third-line-circles-container .header-title-circle:nth-of-type(3){
-    background-image: url(../assets/img/08.png);
+
+#header-title-third-line-circles-container .header-title-circle:nth-of-type(3) {
+    background-image: url(../assets/img/01.png);
 }
 
-.domain-option-preview-container{
+.domain-option-preview-container {
     background-size: cover;
 }
 
@@ -170,12 +188,17 @@ header nav{
 #range-min,
 #range-max {
     width: 100%;
-    height: 2px; /* Or whatever height your track has */
-    position: absolute; /* Essential for stacking */
-    /* background: transparent; */ /* Make the track itself transparent if it's causing issues */
-    appearance: none; /* Reset default browser styles */
+    height: 2px;
+    /* Or whatever height your track has */
+    position: absolute;
+    /* Essential for stacking */
+    /* background: transparent; */
+    /* Make the track itself transparent if it's causing issues */
+    appearance: none;
+    /* Reset default browser styles */
     -webkit-appearance: none;
-    pointer-events: none; /* Make the *entire* input non-interactive by default */
+    pointer-events: none;
+    /* Make the *entire* input non-interactive by default */
 }
 
 /* Now, target the thumb and make *only* it interactable */
@@ -184,29 +207,39 @@ header nav{
     appearance: none;
     -webkit-appearance: none;
     /* Your existing thumb styles for size, background, border, etc. */
-    width: 1.3rem; /* Adjust size to fit your icon */
-    height: 1.3rem; /* Adjust size */
-    background-color: var(--color-fountain-blue-600); /* Or whatever background color you want for the thumb */
+    width: 1.3rem;
+    /* Adjust size to fit your icon */
+    height: 1.3rem;
+    /* Adjust size */
+    background-color: var(--color-fountain-blue-600);
+    /* Or whatever background color you want for the thumb */
     border-radius: 6px;
     cursor: grab;
-    pointer-events: auto; /* Essential for interaction */
+    pointer-events: auto;
+    /* Essential for interaction */
 
     /* Add your SVG as a background image */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%; /* Adjust as needed to fit the icon inside the thumb */
-    border: 1px solid #fff; /* Optional: border around the thumb */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+    background-size: 70%;
+    /* Adjust as needed to fit the icon inside the thumb */
+    border: 1px solid #fff;
+    /* Optional: border around the thumb */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Optional: subtle shadow */
 
     color: white;
 
-    transform: translateY(2.5px);
+    margin-top: 6px;
+
+    /* transform: translateY(2.5px); */
 }
 
-#range-max::-webkit-slider-thumb{
+#range-max::-webkit-slider-thumb {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18 12h-6m0 0H6m6 0V6m0 6v6' /%3E%3C/svg%3E");
 }
-#range-min::-webkit-slider-thumb{
+
+#range-min::-webkit-slider-thumb {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 12h12'/%3E%3C/svg%3E");
 }
 
@@ -225,15 +258,19 @@ header nav{
 /* The z-index strategy for ensuring the active handle is on top */
 /* This is crucial for when handles are close to each other */
 #range-min {
-    z-index: 2; /* Default z-index for min */
+    z-index: 2;
+    /* Default z-index for min */
 }
+
 #range-max {
-    z-index: 1; /* Default z-index for max */
+    z-index: 1;
+    /* Default z-index for max */
 }
 
 /* JavaScript will dynamically update z-index for the active handle */
 .active-handle {
-    z-index: 3 !important; /* Make the currently dragged handle highest */
+    z-index: 3 !important;
+    /* Make the currently dragged handle highest */
 }
 
 #address-suggestions div {
@@ -243,4 +280,13 @@ header nav{
 
 #address-suggestions div:last-child {
     border-bottom: none;
+}
+
+.user-display-name,
+.user-role {
+    max-width: 9.5rem;
+    /* or any size like 10rem, adjust to fit your layout */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

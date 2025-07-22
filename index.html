@@ -51,14 +51,67 @@
                     </li>
                 </ul>
 
-                <ul id="nav-ctas-list" class="flex flex-row gap-x-2">
+                <ul id="nav-ctas-list" class="hidden flex flex-row gap-x-2 w-auto">
                     <li class="nav-cta-item">
-                        <a href="http://">Konekte</a>
+                        <a href="./pages/connexions/login.html">Konekte</a>
                     </li>
                     <li class="nav-cta-item">
-                        <a href="http://">Enskri</a>
+                        <a href="./pages/connexions/signup.html">Enskri</a>
                     </li>
                 </ul>
+
+                <div id="user-exists-profile-container" class="h-auto w-auto flex relative">
+                    <div id="user-exists-profile-btn" class="w-auto h-12 flex flex-row gap-x-4 cursor-pointer px-3 py-1 items-center rounded-md">
+                        <div id="user-profile-img-container" class="h-10 w-auto aspect-square rounded-full" style="background-size: cover;"></div>
+                        <div id="user-profile-infos-container" class="w-auto h-full flex flex-col justify-center">
+                            <p id="user-display-name" class="font-semibold leading-5"></p>
+                            <span id="user-display-role" class="text-[0.875rem] text-woodsmoke-300"></span>
+                        </div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="user-exists-options-container" class="hidden flex-col gap-y-2 bg-white shadow-lg rounded-md p-2 absolute right-0 top-15 z-50 h-auto w-75">
+                        <div id="user-dropdown-menu" class="flex flex-col gap-y-2">
+                            <div id="profile-avatars-container" class="w-full h-auto flex flex-row gap-x-2">
+                                <div class="profile-avatar-container h-12 w-12 rounded-full cursor-pointer" style="background-size: cover;"></div>
+                                <div class="profile-avatar-container h-12 w-12 rounded-full cursor-pointer" style="background-size: cover;"></div>
+                                <span id="avatar-upload-placeholder" class="hidden h-12 w-12 rounded-full border-dashed border border-mercury-400 flex items-center justify-center text-mercury-400 opacity-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="animate-spin">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                                    </svg>
+                                </span>
+                                <input type="file" accept="image/*" class="hidden" id="upload-profile-input">
+                                <button id="upload-avatar-btn" class="bg-cover h-12 w-12 rounded-full cursor-pointer border-dashed border-2 border-mercury-400 flex items-center justify-center text-mercury-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16.004V17a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-8-.5v-11M15.5 8L12 4.5L8.5 8" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="go-to-profile-link-container" class="capitalize font-semibold h-12 w-full flex flex-row justify-between items-center px-2.5">
+                                <a href=".">Ale sou profil mwen</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M17.47 7.47a.75.75 0 0 1 1.06 0l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 0 1-1.06 0v-3.78H2a.75.75 0 0 1 0-1.5h15.47z" />
+                                </svg>
+                            </div>
+                            <div id="share-profile-link-container" class="capitalize font-semibold h-12 w-full flex flex-row justify-between items-center px-2.5">
+                                <a href=".">Pataje profil mwen</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 12a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m5-5.5l-5 3.5m5 7.5l-5-3.5m10 4.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m0-13a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0" />
+                                </svg>
+                            </div>
+                            <div id="switch-profile-link-container" class="capitalize font-semibold h-12 w-full flex flex-row justify-between items-center px-2.5">
+                                <a href=".">Pase sou yon Kont biznis</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 4h4.412v4.444M4 20L19 5m1 10.5V20h-4.5M14 14l5.294 5.333M4 4l6 6" />
+                                </svg>
+                            </div>
+                            <button id="logout-btn" class="h-12 w-full cursor-pointer bg-red-100 font-semibold text-red-700 rounded-md">Dekonekte</button>
+                        </div>
+                    </div>
+                </div>
             </nav>
 
             <div id="header-main" class="w-full h-[calc(100%-4rem)] flex flex-col items-center justify-center gap-y-6">
@@ -136,7 +189,7 @@
                             </div> -->
                         </div>
                         <div id="quest-form-submit-btn-container" class="flex">
-                            <button id="quest-form-sumit-btn" class="h-12 w-auto px-5 rounded-md bg-yellow-orange-400 text-woodmsoke-950 font-semibold cursor-pointer outline-0 border-0">
+                            <button id="quest-form-sumit-btn" class="h-12 w-auto px-5 rounded-md bg-yellow-orange-400 text-woodsmoke-950 font-semibold cursor-pointer outline-0 border-0">
                                 Chèche
                             </button>
                         </div>
@@ -332,10 +385,10 @@
                                 <div id="location-panel-range-input-container" class="h-12 w-auto flex flex-1 flex-row gap-x-2 items-center justify-between">
                                     <span id="range-min-value" class="font-semibold">0.0km</span>
                                     <div class="relative w-auto max-w-[80%] flex-1 h-2 bg-mercury-200 rounded-md">
-                                        <div id="range-track" class="absolute top-0 left-0 h-2 bg-fountain-blue-400 rounded-md"></div>
+                                        <div id="range-track" class="absolute top-0 left-0 h-2 bg-fountain-blue-400 rounded-md z-0"></div>
 
                                         <input type="range" id="range-min" min="1" max="30" step="1" value="1" class="absolute w-full h-2 appearance-none bg-transparent pointer-events-auto">
-                                        <input type="range" id="range-max" min="5" max="30" step="1" value="8" class="absolute w-full h-2 appearance-none bg-transparent pointer-events-auto">
+                                        <input type="range" id="range-max" min="2" max="30" step="1" value="5" class="absolute w-full h-2 appearance-none bg-transparent pointer-events-auto">
                                     </div>
                                     <span id="range-max-value" class="font-semibold">0.0km</span>
                                 </div>
@@ -367,72 +420,16 @@
                     </div>
                 </div>
 
-                <div id="header-cards-container" class="w-auto h-auto flex flex-row gap-x-8">
-                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2">
-                        <div class="header-card-about-user-container w-full h-auto flex flex-col gap-y-2">
-                            <div class="card-user-datas-container w-full h-auto flex flex-row flex-1">
-                                <a href="" class="user-datas-link-wrapper flex flex-row w-full h-full gap-x-4">
-                                    <div class="card-user-profile-container w-[3.5rem] h-[3.5rem] rounded-full bg-green-200 border-4 border-white"></div>
-                                    <div class="user-datas-infos-container flex flex-col justify-between h-full w-auto flex-1">
-                                        <div class="user-datas-display-name-role-container flex flex-col">
-                                            <h4 class="user-display-name text-xl font-bold">TapAyiti</h4>
-                                            <h5 class="user-role">Platfòm Dijital</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2">
-                        <div class="header-card-about-user-container w-full h-auto flex flex-col gap-y-2">
-                            <div class="card-user-datas-container w-full h-auto flex flex-row flex-1">
-                                <a href="" class="user-datas-link-wrapper flex flex-row w-full h-full gap-x-4">
-                                    <div class="card-user-profile-container w-[3.5rem] h-[3.5rem] rounded-full bg-green-200 border-4 border-white"></div>
-                                    <div class="user-datas-infos-container flex flex-col justify-between h-full w-auto flex-1">
-                                        <div class="user-datas-display-name-role-container flex flex-col">
-                                            <h4 class="user-display-name text-xl font-bold">AKRRA</h4>
-                                            <h5 class="user-role">Ajans Rechèch</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2">
-                        <div class="header-card-about-user-container w-full h-auto flex flex-col gap-y-2">
-                            <div class="card-user-datas-container w-full h-auto flex flex-row flex-1">
-                                <a href="" class="user-datas-link-wrapper flex flex-row w-full h-full gap-x-4">
-                                    <div class="card-user-profile-container w-[3.5rem] h-[3.5rem] rounded-full bg-green-200 border-4 border-white"></div>
-                                    <div class="user-datas-infos-container flex flex-col justify-between h-full w-auto flex-1">
-                                        <div class="user-datas-display-name-role-container flex flex-col">
-                                            <h4 class="user-display-name text-xl font-bold">Terminus Transit</h4>
-                                            <h5 class="user-role">Sèvis Transpò</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2">
-                        <div class="header-card-about-user-container w-full h-auto flex flex-col gap-y-2">
-                            <div class="card-user-datas-container w-full h-auto flex flex-row flex-1">
-                                <a href="" class="user-datas-link-wrapper flex flex-row w-full h-full gap-x-4">
-                                    <div class="card-user-profile-container w-[3.5rem] h-[3.5rem] rounded-full bg-green-200 border-4 border-white"></div>
-                                    <div class="user-datas-infos-container flex flex-col justify-between h-full w-auto flex-1">
-                                        <div class="user-datas-display-name-role-container flex flex-col">
-                                            <h4 class="user-display-name text-xl font-bold">Sasha Milevic</h4>
-                                            <h5 class="user-role">Product Designer</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div id="header-cards-container" class="w-auto h-auto flex flex-row gap-x-6">
+                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2 bg-green-300"></div>
+                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2"></div>
+                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2"></div>
+                    <div class="header-card h-auto w-auto rounded-md flex flex-col gap-y-2"></div>
                 </div>
 
                 <a href="" class="flex flex-row gap-x-2 w-fit h-auto items-center rounded-md px-3 py-2 text-[0.875rem] bg-white text-fountain-blue-600">
-                    <span class="bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm">PRO</span>
-                    <span class="capitalize">Konsilte an tan ke yon rekritè</span>
+                    <span class="bg-fountain-blue-100 py-1 px-2 font-semibold text-[0.6rem] rounded-sm">BIZ</span>
+                    <span class="capitalize">Konsilte an tan ke yon Biznis</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M17.47 7.47a.75.75 0 0 1 1.06 0l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 0 1-1.06 0v-3.78H2a.75.75 0 0 1 0-1.5h15.47z" />
                     </svg>
